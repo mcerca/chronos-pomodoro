@@ -1,0 +1,27 @@
+.menu {
+  margin: 4rem 0;
+  text-align: center;
+
+  ul {
+    display: flex;
+    place-content: center;
+    gap: 1.2rem;
+
+    li {
+      cursor: pointer;
+      padding: 1rem;
+      border-radius: 0.5rem;
+      background-color: var(--primary);
+      transition: all 0.2s ease-in-out;
+
+      &:hover {
+        filter: brightness(50%);
+      }
+    }
+
+    a {
+      display: flex;
+      color: var(--text-over-primary);
+    }
+  }
+}
