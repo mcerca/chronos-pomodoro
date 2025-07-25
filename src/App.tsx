@@ -2,9 +2,11 @@ import './styles/theme.css';
 import './styles/global.css';
 
 import { Container } from './components/Container';
-import { Heading } from './components/Heading';
 import { Logo } from './components/Logo';
 import { Menu } from './components/Menu';
+import { CountDown } from './components/CountDown';
+import { Form } from './components/Form';
+import { Footer } from './components/Footer';
 
 export function App() {
   return (
@@ -18,11 +20,15 @@ export function App() {
       </Container>
 
       <Container>
-        <Heading>Form</Heading>
+        <CountDown />
       </Container>
 
       <Container>
-        <Heading>Footer</Heading>
+        <Form />
+      </Container>
+
+      <Container>
+        <Footer />
       </Container>
     </>
   );
